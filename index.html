@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>starbucks Coffee Company</title>
+</head>
+<style>
+    body{
+        background-color: white;
+        margin: 0px;
+    }
+    nav{
+    padding: 20px;
+    border-bottom: 2px solid rgb(213, 209, 209); 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    /*Anchor inside my nav */
+    nav a{
+    font-family: sans-serif;
+    white-space: nowrap;
+    color: black;
+    }
+    nav a:hover{
+      color: green;
+      transition: 0.15s;
+    }
+    nav a:last-child {
+        border-right: none;
+    }
+    nav div{
+    display: flex; 
+    align-items: center;
+    gap: 20px;
+    }
+    nav a{
+      display: flex;
+      align-items: center;
+    }
+  .icon{
+    width: 32px;
+    height: 32px;
+  }
+  .logo{
+    width: 50px;
+  }
+  a{
+    text-decoration: none;
+    font-family: sans-serif;
+    white-space: nowrap;
+    color: black;
+  }
+  .button:hover{
+    background-color: rgba(108, 108, 108, 0.383);
+    color: black;
+    transition: 0.15s;
+  }
+  .button{
+    outline: 1px solid black;
+    padding: 8px;
+    border-radius: 1.5cap;
+  }
+  .box>div{
+    width:50%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-top: 30px solid white;
+    border-bottom: 30px solid white;
+  }
+  .box img{
+    width:50%;
+    border-top: 30px solid white;
+    border-bottom: 30px solid white;
+  }
+  .box{
+    display: flex;
+    background-color: rgb(255, 168, 255);
+  }
+  h1{
+    font-size: 55px;
+    font-family: sans-serif;
+    color: rgb(40, 37, 42);
+  }
+  p{
+    font-size: 25px;
+    font-family: sans-serif;
+    color: rgb(40, 37, 42);
+    padding-bottom: 25px;
+    text-align: center;
+  }
+  .box2>div{
+    width:50%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-bottom: 30px solid white;
+  }
+  .box2 img{
+    width:50%;
+    border-bottom: 30px solid white;
+  }
+  .box2{
+    display: flex;
+    background-color: rgb(13, 97, 52)
+  }
+  h2{
+    font-size: 25px;
+    font-family: sans-serif;
+    color: white;
+  }
+  .box2 p{
+    font-size: 18px;
+    font-family: sans-serif;
+    color: white;
+    padding-bottom: 25px;
+    text-align: center;
+  }
+  .box2 .button{
+    outline: 1px solid white;
+    padding: 8px;
+    border-radius: 1.5cap;
+    color: white;
+  }
+  .box2 .button:hover{
+    background-color: rgba(108, 108, 108, 0.383);
+    color: black;
+    transition: 0.15s;
+  }
+  .box3>div{
+    width:50%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-bottom: 30px solid white;
+  }
+  .box3 img{
+    width:50%;
+    border-bottom: 30px solid white;
+  }
+  .box3 {
+    display: flex;
+    background-color: rgb(166, 183, 91);
+  }
+  h3{
+    font-size: 55px;
+    font-family: sans-serif;
+    color: rgb(40, 37, 42);
+  }
+  .box3 p{
+    font-size: 30px;
+    font-family: sans-serif;
+    color: rgb(40, 37, 42);
+    padding-bottom: 25px;
+    text-align: center;
+  }
+  .box3 .button{
+    outline: 1px solid rgb(40, 37, 42);
+    padding: 8px;
+    border-radius: 1.5cap;
+    color: rgb(40, 37, 42);
+  }
+  .box3 .button:hover{
+    background-color: rgba(108, 108, 108, 0.383);
+    color: black;
+    transition: 0.15s;
+  }
+  .box4>div{
+    width:50%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-bottom: 30px solid white;
+
+  }
+  .box4 img{
+    width:50%;
+    border-bottom: 30px solid white;
+  }
+  .box4{
+    display: flex;
+    background-color: hwb(21 29% 12%);
+  }
+  h4{
+    font-size: 55px;
+    font-family: sans-serif;
+    color: rgb(40, 37, 42);
+  }
+  .box4 p{
+    font-size: 30px;
+    font-family: sans-serif;
+    color: rgb(40, 37, 42);
+    padding-bottom: 25px;
+    text-align: center;
+  }
+  .box4 .button{
+    outline: 1px solid rgb(40, 37, 42);
+    padding: 8px;
+    border-radius: 1.5cap;
+    color: rgb(40, 37, 42);
+  }
+  .box5>div{
+    width:50%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-bottom: 30px solid white;
+  }
+  .box5 img{
+    width:50%;
+    border-bottom: 30px solid white;
+  }
+  .box5 {
+    display: flex;
+    background-color: rgb(215, 255, 228);
+  }
+  h5{
+    font-size: 55px;
+    font-family: sans-serif;
+    color: rgb(40, 37, 42);
+  }
+  .box5 p{
+    font-size: 30px;
+    font-family: sans-serif;
+    color: rgb(40, 37, 42);
+    padding-bottom: 25px;
+    text-align: center;
+  }
+  .box5 .button{
+    outline: 1px solid rgb(40, 37, 42);
+    padding: 8px;
+    border-radius: 1.5cap;
+    color: rgb(40, 37, 42);
+  }
+  .box5 .button:hover{
+    background-color: rgba(108, 108, 108, 0.383);
+    color: black;
+    transition: 0.15s;
+  }
+  footer p{
+   color: black; 
+   text-align: center;
+   display: flex;
+   align-items: center;
+   font-size: 15px;
+   font-family: sans-serif;
+   margin-inline: 300px;
+   padding-top: 40px;
+   border-bottom: 30px solid white;
+  }
+ 
+</style>
+<body>
+    <main>
+        <nav>
+            <div>
+                <a href=""><img src="logo.svg" alt="" class="logo"></a>
+                <a href="">MENU</a>
+                <a href="">REWARDS</a>
+                <a href="">GIFT CARDS</a>
+            </div>
+            <div>
+                <a href=""><img src="findastore.svg" alt="" class="icon">Find a store</a>
+                <a href="" class="button">Sign in</a> 
+                <a href="" class="button">Join now</a>
+            </div>
+        </nav>
+        <div class="box">
+          <div>
+            <h1>Job well done</h1>
+            <p>Show that hard worker your gratitude, just in time for Employee Appreciation Day on March 1.</p>
+            <a href="" class="button">Send an eGift</a>
+          </div>
+          <img src="img1.webp" alt="">
+        </div>
+        <div class="box2">
+          <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-88691.jpg" alt="">
+          <div>
+            <h2>Get rewarded with Bank of America</h2>
+            <p>Now Starbucks® Rewards members can link their eligible Bank of America card and enjoy special perks, like 2% Cash Back and Bonus Stars on qualifying Starbucks in-app purchases.*</p>
+            <a href="" class="button">Get Started</a>
+          </div>
+        </div>
+        <div class="box3">
+          <div>
+            <h3>Pass the pistachios</h3>
+            <p>Your favorite winter duo is back: the Pistachio Latte and Pistachio Cream Cold Brew.</p>
+            <a href="" class="button">Learn more</a>
+          </div>
+          <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-88120.jpg" alt="">
+        </div>
+        <div class="box4">
+          <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-88371.jpg" alt="">
+          <div>
+            <h4>Turn up the bright</h4>
+            <p>A cheerful moment awaits with our Pink Drink, Dragon Drink® and Paradise Drink Starbucks Refreshers® beverage.</p>
+            <a href="" class="button">Order now</a>
+          </div>
+        </div>
+        <div class="box5">
+            <div>
+              <h5>Positively delicious</h5>
+              <p>Go for a nondairy pick-me-up with 150 calories or less in a grande. Choose the new Hazelnut Oatmilk Shaken Espresso or classic Brown Sugar Oatmilk Shaken Espresso.</p>
+              <a href="" class="button">Order now</a>
+            </div>
+            <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-88930.jpg" alt="">
+        </div>
+        </main>
+        <footer>
+          <p>*At participating stores only. Some restrictions apply. Linked Card members will earn 2% Cash Back on the full purchase price of every Qualifying Purchase. Bonus Star offer excludes taxes and tips. Stars may not be earned on purchases of alcohol or on reloads of Starbucks Cards that are not registered. For full details, visit www.starbucks.com/bofa. Bank of America, N.A. Member FDIC.</p>
+        </footer>
+            
+            
+
+  
+        
+   
+    
+
+</body>
+</html>
